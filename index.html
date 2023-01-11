@@ -1,5 +1,6 @@
 <html>
   <header>
+    <!DOCTYPE html>
     <meta charset="utf-8" />
     <title>XeroBytes Podcast</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,15 +12,13 @@
     ></script>
   </header>
   <body>
-    <div class="grid-container">
+    <div class="grid-container flex-container">
       <div class="header">
-        <img class="logo" src="Podcast-Logo.png" />
+        <img class="podcastLogo" src="Podcast-Logo.png" />
       </div>
-      <div class="content contianer">
+      <div class="content iframe-contianer">
         <iframe
           class="responsive-iframe" 
-          width="560"
-          height="315"
           src="https://www.youtube.com/embed/videoseries?list=PLeTlEEB2MZX4DD7AekVNw2bwBUz4uNBad"
           title="YouTube video player"
           frameborder="0"
@@ -30,14 +29,12 @@
     <div class="list"></div>
     <div class="socials">
         <span></span>
-      <i class="fa-brands fa-discord fa-2xl icon"></i>
+      <a class="icon fa-brands fa-discord fa-2xl icon" href="https://discord.gg/Xg6T78ahtK" alt="XeroLinux Discord"></a>
       <span></span>
-      <img class="icon" src="anchor-fm.png" />
+      <a class="icon" href="https://anchor.fm/xerobytes"><img src="anchor-fm.png" alt="Audio only"></a>
       <span></span>
-      <i class="fa-brands fa-mastodon fa-2xl icon"></i>
+      <a class="icon fa-brands fa-mastodon fa-2xl icon" href="https://fosstodon.org/@TechXero"></a>
       <span></span>
     </div>
   </body>
 </html>
-
-<!-- font awesome icons-->
