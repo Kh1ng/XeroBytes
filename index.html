@@ -1,24 +1,31 @@
-<html>
-  <header>
-    <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="utf-8" />
     <title>XeroBytes Podcast</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <script
       src="https://kit.fontawesome.com/a9d6a05fa4.js"
       crossorigin="anonymous"
     ></script>
-  </header>
-  <body>
-    <div class="grid-container flex-container">
-      <div class="header">
-        <img class="podcastLogo" src="Podcast-Logo.png" />
-      </div>
-      <div class="content iframe-contianer">
+  </head>
+
+  <body class="container text-center">
+    <div class="align-middle header">
+      <img class="img-fluid" src="Podcast-Logo.png" />
+    </div>
+    <div class="row container h-100">
+      <div class="container col-md-10 content ratio ratio-16x9">
         <iframe
-          class="responsive-iframe" 
+          class="responsive-iframe"
           src="https://www.youtube.com/embed/videoseries?list=PLeTlEEB2MZX4DD7AekVNw2bwBUz4uNBad"
           title="YouTube video player"
           frameborder="0"
@@ -26,15 +33,26 @@
           allowfullscreen
         ></iframe>
       </div>
-    <div class="list"></div>
-    <div class="socials">
+      <div class="container col-md-2"><div class="list"></div></div>
+    </div>
+    <div class="row">
+      <div class="socials">
         <span></span>
-      <a class="icon fa-brands fa-discord fa-2xl icon" href="https://discord.gg/Xg6T78ahtK" alt="XeroLinux Discord"></a>
-      <span></span>
-      <a class="icon" href="https://anchor.fm/xerobytes"><img src="anchor-fm.png" alt="Audio only"></a>
-      <span></span>
-      <a class="icon fa-brands fa-mastodon fa-2xl icon" href="https://fosstodon.org/@TechXero"></a>
-      <span></span>
+        <a
+          class="icon fa-brands fa-discord fa-2xl icon"
+          href="https://discord.gg/Xg6T78ahtK"
+          alt="XeroLinux Discord"
+        ></a>
+        <span>
+          <a class="icon" href="https://anchor.fm/xerobytes"
+            ><img src="anchor-fm.png" alt="Audio only"
+          /></a>
+          <a
+            class="icon fa-brands fa-mastodon fa-2xl icon"
+            href="https://fosstodon.org/@TechXero"
+          ></a>
+        </span>
+      </div>
     </div>
   </body>
 </html>

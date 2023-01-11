@@ -1,7 +1,5 @@
-// const hbBtn = document.getElementsById("hamburger");
 const list = document.querySelector(".list");
 const content = document.querySelector(".content");
-// const dropdownmenu = document.querySelector(".dropdownmenu");
 let nextPageToken = "";
 let playlist = [];
 let featuredHTML = "";
@@ -28,8 +26,6 @@ fetch(
       }" onclick=videoClicked(${String(i)})>
             </div>
                 `;
-
-      console.log(playlist[i]);
       i++;
     }
   });

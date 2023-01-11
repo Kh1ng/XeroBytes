@@ -14,83 +14,41 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: auto;
-  display: flex;
+  /* margin: auto;
+  display: flex; */
   padding: 1%;
   gap: 1rem;
 }
 
 /* Flex */
-.flex-container {
+/* .flex-container {
   display: flex;
   flex-direction: column;
 }
 
 .flex-container > div {
   padding: 1%;
-}
+} */
 
 /* Grid items */
+.header {
+  text-align: center;
+  align-items: baseline;
+}
+
 .list {
-  order: 4;
-  grid-area: list;
   background-color: #2633c080;
-  overflow: hidden;
-  flex: 1;
+  /* overflow: hidden;
+  flex: 1; */
   gap: 1rem;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   width: 100px;
 }
 
 .socials {
-  order: 2;
-  grid-area: socials;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.content {
-  order: 3;
-  grid-area: content;
-  position: relative;
-  overflow: hidden;
-  flex: 1;
-  background-image: url("https://imgur.com/a/0N0mWiS");
-  background-color: aqua;
-  background-repeat: no-repeat;
-  background-size: fill;
-  box-sizing: border-box;
-  width: clamp(400px, 1000px, 1700px);
-  justify-content: center;
-  align-content: center;
-}
-
-.header {
-  order: 1;
-  grid-area: header;
-  box-sizing: border-box;
   align-items: baseline;
-  overflow: hidden;
-  width: clamp(500px, 100%, 1200px);
-}
-
-/* Grid container */
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "content content content list"
-    "content content content list"
-    "socials socials socials socials";
-  gap: 1rem;
-}
-
-.grid-container > div {
   text-align: center;
-  padding: 3%;
-  size: fill;
+  width: 100%;
 }
 
 /*  Images */
@@ -100,6 +58,7 @@ body {
 }
 
 div.gallery:hover {
+  size: 200%;
   border: 1rem solid #777;
 }
 
