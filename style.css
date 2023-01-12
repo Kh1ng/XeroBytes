@@ -21,12 +21,6 @@ div.gallery:hover {
   border: 0.2rem solid #777;
 }
 
-.icon {
-  display: inline-block;
-  color: rgb(44, 44, 44);
-  align-items: baseline;
-}
-
 .header {
   width: 100%;
   margin: 0;
@@ -60,6 +54,7 @@ div.gallery:hover {
   touch-action: manipulation;
   vertical-align: baseline;
   width: auto;
+  max-height: 3rem;
 }
 
 .button-6:hover,
@@ -79,4 +74,8 @@ div.gallery:hover {
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
+}
+
+.buttons {
+  max-height: 90%;
 }
