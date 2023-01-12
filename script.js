@@ -20,7 +20,7 @@ fetch(
       let descriptionTxt = video.snippet.description;
       playlist[i] = video;
       list.innerHTML += `
-      <div class="gallery px-1">
+      <div class="gallery ratio ratio-4x3 m-1">
                 <img class="tn img-fluid"  id="${String(i)}" src="${
         playlist[i].snippet.thumbnails.high.url
       }" onclick=videoClicked(${String(i)})>
