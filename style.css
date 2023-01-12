@@ -6,6 +6,8 @@ body {
   background-position: right top;
   background-size: 100% 100%;
   max-height: 100vh;
+  height: 100%;
+  width: auto;
 }
 
 .list {
@@ -17,36 +19,18 @@ body {
   background-color: #2633c080;
 }
 
-.socials {
-  align-items: baseline;
-  text-align: center;
-  width: 100%;
-}
-
 div.gallery:hover {
-  size: 200%;
-  border: 1rem solid #777;
+  transform: scale(1.5);
+  border: 0.2rem solid #777;
 }
 
 .icon {
-  size: 32px;
+  display: inline-block;
+  color: rgb(44, 44, 44);
   align-items: baseline;
 }
 
-.iframe-container {
-  position: relative;
-  overflow: hidden;
-  width: max-content;
-  height: auto;
-}
-
-.responsive-iframe {
-  aspect-ratio: 16 / 9;
-  position: relative;
-  overflow: hidden;
+.header {
   width: 100%;
-}
-
-.main {
-  gap: 1rem;
+  margin: 0;
 }

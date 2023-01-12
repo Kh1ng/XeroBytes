@@ -19,12 +19,14 @@
   </head>
 
   <body class="container">
-    <div class="container-fluid text-center h-100 mx-auto main">
-      <div class="align-middle header mx-auto">
-        <img class="img-fluid Podcast-Logo" src="Podcast-Logo.png" />
+    <div class="container-fluid no-padding align-content-stretch row mx-auto">
+      <div class="col-md-12 text-center mx-auto header p-2">
+        <img class="img-fluid rounded" src="Podcast-Logo.png" />
       </div>
       <div class="row container-fluid mx-auto">
-        <div class="embed-responsive embed-responsive-21by9 col-md-10 content">
+        <div
+          class="contained-fluid embed-responsive embed-responsive-21by9 col-md-10 content p-2"
+        >
           <iframe
             class="embedded-responsive-item col-md-12 ratio16by9"
             src="https://www.youtube.com/embed/videoseries?list=PLeTlEEB2MZX4DD7AekVNw2bwBUz4uNBad"
@@ -34,24 +36,28 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="container col-md-2 offset-md-2 rounded tns mx-auto">
+        <div class="container col-md-2 rounded tns mx-auto">
           <div class="list container-fluid"></div>
         </div>
       </div>
       <div class="row container-fluid mx-auto">
-        <div class="socials px-2 mx-auto">
-          <a
-            class="icon fa-brands fa-discord fa-2xl icon"
-            href="https://discord.gg/Xg6T78ahtK"
-            alt="XeroLinux Discord"
-          ></a>
-          <a class="icon" href="https://anchor.fm/xerobytes"
-            ><img src="anchor-fm.png" alt="Audio only"
-          /></a>
-          <a
-            class="icon fa-brands fa-mastodon fa-2xl icon"
-            href="https://fosstodon.org/@TechXero"
-          ></a>
+        <div class="socials col-md-12 mx-auto">
+          <div class="col-md-12 container-fluid mx-auto text-center p-2">
+            <a
+              class="icon img-fluid fa-brands fa-discord fa-6x icon float-left"
+              href="https://discord.gg/Xg6T78ahtK"
+              alt="XeroLinux Discord"
+            ></a>
+
+            <a class="icon img-fluid" href="https://anchor.fm/xerobytes"
+              ><img src="anchor-fm.png" alt="Audio only"
+            /></a>
+
+            <a
+              class="icon img-fluid fa-brands fa-mastodon fa-6x icon float-right"
+              href="https://fosstodon.org/@TechXero"
+            ></a>
+          </div>
         </div>
       </div>
     </div>
