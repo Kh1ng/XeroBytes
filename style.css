@@ -7,11 +7,6 @@ body {
   background-size: 100% 100%;
 }
 
-.list {
-  gap: 1rem;
-  padding: 5%;
-}
-
 .tns {
   background-color: #2633c080;
 }
@@ -19,11 +14,6 @@ body {
 div.gallery:hover {
   transform: scale(1.5);
   border: 0.2rem solid #777;
-}
-
-.header {
-  width: 100%;
-  margin: 0;
 }
 
 /* button */
@@ -53,8 +43,9 @@ div.gallery:hover {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
-  width: auto;
+  width: 25%;
   max-height: 3rem;
+  color: #dd38d5;
 }
 
 .button-6:hover,

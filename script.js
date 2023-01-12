@@ -16,11 +16,11 @@ fetch(
     let i = 0;
     for (video of videos) {
       let title = video.snippet.title;
-      let imgURL = video.snippet.thumbnails.high.url;
+      let imgURL = video.snippet.thumbnails.medium.url;
       let descriptionTxt = video.snippet.description;
       playlist[i] = video;
       list.innerHTML += `
-      <div class="gallery px-0">
+      <div class="gallery px-1">
                 <img class="tn img-fluid"  id="${String(i)}" src="${
         playlist[i].snippet.thumbnails.high.url
       }" onclick=videoClicked(${String(i)})>
