@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: src("https://w.wallhaven.cc/full/1k/wallhaven-1k9e5g.png");
+  background-image: url("https://w.wallhaven.cc/full/1k/wallhaven-1k9e5g.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2d3054;
@@ -37,12 +37,14 @@ body {
 }
 
 .list {
-  background-color: #2633c080;
-  /* overflow: hidden;
-  flex: 1; */
   gap: 1rem;
-  /* box-sizing: border-box; */
   width: 100px;
+  padding: 5%;
+  margin: 10%;
+}
+
+.tns {
+  background-color: #2633c080;
 }
 
 .socials {
