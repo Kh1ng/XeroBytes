@@ -18,34 +18,33 @@
     ></script>
   </head>
 
-  <body class="container text-center">
-    <div class="align-middle header">
-      <img class="img-fluid" src="Podcast-Logo.png" />
-    </div>
-    <div class="row container h-100">
-      <div class="container col-md-10 content ratio ratio-16x9">
-        <iframe
-          class="responsive-iframe"
-          src="https://www.youtube.com/embed/videoseries?list=PLeTlEEB2MZX4DD7AekVNw2bwBUz4uNBad"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+  <body class="container">
+    <div class="container-fluid text-center h-100 mx-auto main">
+      <div class="align-middle header mx-auto">
+        <img class="img-fluid Podcast-Logo" src="Podcast-Logo.png" />
       </div>
-      <div class="container col-md-2 rounded-3 tns">
-        <div class="list"></div>
+      <div class="row container-fluid mx-auto">
+        <div class="embed-responsive embed-responsive-21by9 col-md-10 content">
+          <iframe
+            class="embedded-responsive-item col-md-12 ratio16by9"
+            src="https://www.youtube.com/embed/videoseries?list=PLeTlEEB2MZX4DD7AekVNw2bwBUz4uNBad"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="container col-md-2 offset-md-2 rounded tns mx-auto">
+          <div class="list container-fluid"></div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="socials">
-        <span></span>
-        <a
-          class="icon fa-brands fa-discord fa-2xl icon"
-          href="https://discord.gg/Xg6T78ahtK"
-          alt="XeroLinux Discord"
-        ></a>
-        <span>
+      <div class="row container-fluid mx-auto">
+        <div class="socials px-2 mx-auto">
+          <a
+            class="icon fa-brands fa-discord fa-2xl icon"
+            href="https://discord.gg/Xg6T78ahtK"
+            alt="XeroLinux Discord"
+          ></a>
           <a class="icon" href="https://anchor.fm/xerobytes"
             ><img src="anchor-fm.png" alt="Audio only"
           /></a>
@@ -53,7 +52,7 @@
             class="icon fa-brands fa-mastodon fa-2xl icon"
             href="https://fosstodon.org/@TechXero"
           ></a>
-        </span>
+        </div>
       </div>
     </div>
   </body>

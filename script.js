@@ -20,8 +20,8 @@ fetch(
       let descriptionTxt = video.snippet.description;
       playlist[i] = video;
       list.innerHTML += `
-      <div class="gallery">
-                <img class="tn"  id="${String(i)}" src="${
+      <div class="gallery px-0">
+                <img class="tn img-fluid"  id="${String(i)}" src="${
         playlist[i].snippet.thumbnails.high.url
       }" onclick=videoClicked(${String(i)})>
             </div>
@@ -49,9 +49,9 @@ function getSelectedVideo(videoID) {
 
   function setEmbeddedVideo(selection) {
     content.innerHTML = `
-    <div class="iframe-container">
+    <div class="container">
       <iframe
-            class="responsive-iframe"
+            class="embedded-responsive-item"
             src="https://www.youtube.com/embed/${selection}"
             title="YouTube video player"
             frameborder="0"

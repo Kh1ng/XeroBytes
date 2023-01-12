@@ -1,46 +1,16 @@
-@media (min-height: 680px), screen and (orientation: portrait) {
-  /* … */
-}
-
 body {
   background-image: url("https://w.wallhaven.cc/full/1k/wallhaven-1k9e5g.png");
   background-repeat: no-repeat;
-  background-size: cover;
   background-color: #2d3054;
   background-attachment: fixed;
-  background-repeat: no-repeat;
   background-position: right top;
   background-size: 100% 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  /* margin: auto;
-  display: flex; */
-  padding: 1%;
-  gap: 1rem;
-}
-
-/* Flex */
-/* .flex-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-container > div {
-  padding: 1%;
-} */
-
-/* Grid items */
-.header {
-  text-align: center;
-  align-items: baseline;
+  max-height: 100vh;
 }
 
 .list {
   gap: 1rem;
-  width: 100px;
   padding: 5%;
-  margin: 10%;
 }
 
 .tns {
@@ -53,18 +23,9 @@ body {
   width: 100%;
 }
 
-/*  Images */
-.pocastLogo {
-  width: 100%;
-  height: auto;
-}
-
 div.gallery:hover {
   size: 200%;
   border: 1rem solid #777;
-}
-
-.gallery {
 }
 
 .icon {
@@ -86,7 +47,6 @@ div.gallery:hover {
   width: 100%;
 }
 
-.tn {
-  width: 100%;
-  height: auto;
+.main {
+  gap: 1rem;
 }
