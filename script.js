@@ -14,15 +14,12 @@ fetch(
     let videos = data.items;
     nextPageToken = data.nextPageToken;
     let i = 0;
-    for (video of videos) {
-      let title = video.snippet.title;
-      let imgURL = video.snippet.thumbnails.medium.url;
-      let descriptionTxt = video.snippet.description;
-      playlist[i] = video;
+    for (data of videos) {
+      playlist[i] = data;
       list.innerHTML += `
       <div class="gallery img-fluid m-1">
                 <img class="tn img-fluid"  id="${String(i)}" src="${
-        playlist[i].snippet.thumbnails.high.url
+        playlist[i].snippet.thumbnails.maxres.url
       }" onclick=videoClicked(${String(i)})>
             </div>
                 `;
@@ -61,4 +58,8 @@ function getSelectedVideo(videoID) {
     </div>
     `;
   }
+}
+
+function modalOpen() {
+  $("#exampleModalLong").modal("show");
 }
