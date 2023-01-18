@@ -4,6 +4,13 @@ let nextPageToken = "";
 let playlist = [];
 let featuredHTML = "";
 
+class video {
+  constructor(url, tnurl) {
+    this.url = url;
+    this.thumbnailUrl = tnURL;
+  }
+}
+
 fetch(
   "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&playlistId=PLeTlEEB2MZX4DD7AekVNw2bwBUz4uNBad&key=AIzaSyAxN5HNU7dCj1AUh6p4IOXB0ZdpdKwlkJU"
 )
@@ -14,8 +21,11 @@ fetch(
     let videos = data.items;
     nextPageToken = data.nextPageToken;
     let i = 0;
-    for (data of videos) {
-      playlist[i] = data;
+    for (video of videos) {
+      playlist[i] = video(
+        getVideoID(data),
+        video.snippet.thumbnails.maxres.url
+      );
       list.innerHTML += `
       <div class="gallery img-fluid m-1">
                 <img class="tn img-fluid"  id="${String(i)}" src="${
@@ -34,6 +44,13 @@ function videoClicked(id) {
   let vidId = tnURL.slice(0, -14);
   console.log(vidId);
   getSelectedVideo(vidId);
+}
+
+function getVideoID(data) {
+  let tnURL = data.snippet.thumbnails.maxres.url;
+  tnURL = tnURL.replace("https://i.ytimg.com/vi/", "");
+  let videoId = tnURL.slice(0, -14);
+  return videoID;
 }
 
 function getSelectedVideo(videoID) {
